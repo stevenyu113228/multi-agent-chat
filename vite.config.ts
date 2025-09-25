@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: process.env.GITHUB_PAGES ? '/multi-agent-chat/' : '/',
+  base: process.env.GITHUB_PAGES ? '/' : '/',
   server: {
     host: true,
     // Disable host check to allow all hosts
