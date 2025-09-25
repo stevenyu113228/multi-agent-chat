@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-discord-dark text-discord-text;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-discord-darker;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-discord-darkest rounded;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-discord-muted;
+  }
+}
+
+@layer components {
+  .message-content p {
+    @apply mb-2 last:mb-0;
+  }
+
+  .message-content pre {
+    @apply bg-discord-darkest rounded-md p-3 my-2 overflow-x-auto;
+  }
+
+  .message-content code:not(pre code) {
+    @apply bg-discord-darkest px-1 py-0.5 rounded text-sm;
+  }
+
+  .message-content ul {
+    @apply list-disc list-inside mb-2;
+  }
+
+  .message-content ol {
+    @apply list-decimal list-inside mb-2;
+  }
+
+  .message-content blockquote {
+    @apply border-l-4 border-discord-blue pl-4 italic my-2;
+  }
+
+  .message-content h1 {
+    @apply text-2xl font-bold mb-2;
+  }
+
+  .message-content h2 {
+    @apply text-xl font-bold mb-2;
+  }
+
+  .message-content h3 {
+    @apply text-lg font-bold mb-2;
+  }
+}
