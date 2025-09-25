@@ -1,6 +1,10 @@
 # Multi-Agent Chat
 
+🌐 **Live Demo**: [https://multi-chat.stevenyu.tw/](https://multi-chat.stevenyu.tw/)
+
 A pure frontend multi-AI agent group chat application that lets you interact with multiple AI personalities simultaneously, creating a Discord-like group chat experience.
+
+![Multi-Agent Chat Interface](./img/en.png)
 
 ## ✨ Features
 
@@ -130,7 +134,7 @@ multi-agent-chat/
 - **Endpoint**: API endpoint (default: OpenAI official)
 - **Model**: Choose your model (default: gpt-4o)
 - **Temperature**: Control response creativity (0-2)
-- **Max Tokens**: Maximum response length (up to 400,000)
+- **Max Tokens**: Maximum response length (default: 4,096)
 
 ### Agent Configuration
 Each agent can be configured with:

@@ -218,7 +218,7 @@ export default function SettingsPage() {
                 </p>
                 <div className="pt-4">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/stevenyu113228/multi-agent-chat"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-discord-blue hover:underline"

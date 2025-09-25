@@ -69,7 +69,7 @@ export default function Layout({ children }: LayoutProps) {
 
         {/* GitHub Link */}
         <a
-          href="https://github.com"
+          href="https://github.com/stevenyu113228/multi-agent-chat"
           target="_blank"
           rel="noopener noreferrer"
           className="

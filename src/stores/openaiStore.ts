@@ -12,7 +12,7 @@ const defaultConfig: OpenAIConfig = {
   endpoint: 'https://api.openai.com/v1',
   model: 'gpt-4o',
   temperature: 0.7,
-  maxTokens: 400000,
+  maxTokens: 4096,
   topP: 1,
   stream: true,
 };
@@ -25,7 +25,7 @@ const migrateConfig = (config: any): OpenAIConfig => {
     apiEndpoint: config.apiEndpoint,
     model: config.model || 'gpt-4o',
     temperature: config.temperature ?? 0.7,
-    maxTokens: config.maxTokens || 400000,
+    maxTokens: config.maxTokens || 4096,
     topP: config.topP ?? 1,
     stream: config.stream ?? true,
   };

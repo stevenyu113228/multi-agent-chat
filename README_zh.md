@@ -1,6 +1,10 @@
 # 多智能體聊天室
 
+🌐 **線上示範**: [https://multi-chat.stevenyu.tw/](https://multi-chat.stevenyu.tw/)
+
 一個純前端的多 AI 智能體群組聊天應用程式，讓您可以同時與多個 AI 角色互動，創造類似 Discord 的群組聊天體驗。
+
+![多智能體聊天介面](./img/zh.png)
 
 ## ✨ 功能特色
 
@@ -130,7 +134,7 @@ multi-agent-chat/
 - **端點**：API 端點（預設：OpenAI 官方）
 - **模型**：選擇模型（預設：gpt-4o）
 - **Temperature**：控制回應創意度（0-2）
-- **Max Tokens**：最大回應長度（最高 400,000）
+- **Max Tokens**：最大回應長度（預設：4,096）
 
 ### 智能體配置
 每個智能體可配置：
