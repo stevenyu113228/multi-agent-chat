@@ -18,8 +18,8 @@ export default defineConfig({
         target: 'https://api.openai.com',
         changeOrigin: true,
         secure: false,
-        configure: (proxy, options) => {
-          proxy.on('proxyReq', (proxyReq, req, res) => {
+        configure: (proxy: any, options: any) => {
+          proxy.on('proxyReq', (proxyReq: any, req: any, _res: any) => {
             const url = req.url || '';
             console.log('Original URL:', url);
 
@@ -46,7 +46,7 @@ export default defineConfig({
             }
           });
         },
-        router: function(req) {
+        router: function(req: any) {
           const url = req.url || '';
           const match = url.match(/^\/proxy\/(https?:\/\/[^\/]+)/);
           if (match) {
@@ -58,7 +58,7 @@ export default defineConfig({
         }
       },
     },
-  },
+  } as any,
   // Disable host check
   appType: 'spa',
   preview: {
